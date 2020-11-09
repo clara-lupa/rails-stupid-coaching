@@ -1,7 +1,13 @@
-<p>Your question was:</p>
-<%= @question %>
+<div class="container">
+  <h1>Stupid Coaching</h1>
+  <div class="message">
+    <h2><%= @question %></h2>
+    <p> -- You</p>
+  </div>
+  <div class="message coach">
+    <h2><%= @answer %></h2>
+    <p> -- Your coach</p>
+  </div>
 
-<p>The coach says:</p>
-<%= @answer %>
-<br>
-<%= link_to "Ask another question", ask_path %>
+  <%= link_to "Ask another question", ask_path %>
+</div>
